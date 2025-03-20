@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->text('icon'); //changed it to text bc links were too long
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('client_company');
             $table->string('client_profile_picture');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

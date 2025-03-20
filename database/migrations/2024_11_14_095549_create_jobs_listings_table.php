@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('work_mode');
             $table->string('location');
             $table->timestamps();
+            $table->softDeletes();
+            
         });
     }
 

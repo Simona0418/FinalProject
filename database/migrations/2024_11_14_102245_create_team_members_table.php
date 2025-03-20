@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignId('position_id')->constrained('positions')->onDelete('cascade');
             $table->text('short_profile');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('logo');
             $table->text('collaboration_description');
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 
